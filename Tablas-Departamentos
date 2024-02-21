@@ -1,0 +1,104 @@
+-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Servidor: localhost:3306
+-- Tiempo de generación: 20-02-2024 a las 15:24:01
+-- Versión del servidor: 10.0.38-MariaDB-cll-lve
+-- Versión de PHP: 8.1.27
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de datos: `szunigas_LeanMotor`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `departamentos`
+--
+
+CREATE TABLE `departamentos` (
+  `Codigo_Departamento` varchar(11) NOT NULL,
+  `Codigo_Pais` int(11) DEFAULT NULL,
+  `Nombre` varchar(30) DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `departamentos`
+--
+
+INSERT INTO `departamentos` (`Codigo_Departamento`, `Codigo_Pais`, `Nombre`) VALUES
+('05', 1, 'Antioquia'),
+('08', 1, 'Atlántico'),
+('14', 1, 'Bogotá, DC.'),
+('13', 1, 'Bolívar'),
+('15', 1, 'Boyacá'),
+('17', 1, 'Caldas'),
+('18', 1, 'Caquetá'),
+('19', 1, 'Cauca'),
+('20', 1, 'Cesar'),
+('23', 1, 'Córdoba'),
+('25', 1, 'Cundinamarca'),
+('27', 1, 'Chocó'),
+('41', 1, 'Huila'),
+('44', 1, 'La Guajira'),
+('47', 1, 'Magdalena'),
+('50', 1, 'Meta'),
+('52', 1, 'Nariño'),
+('54', 1, 'Norte de Santander'),
+('63', 1, 'Quindio'),
+('66', 1, 'Risaralda'),
+('68', 1, 'Santander'),
+('70', 1, 'Sucre'),
+('73', 1, 'Tolima'),
+('76', 1, 'Valle del Cauca'),
+('81', 1, 'Arauca'),
+('85', 1, 'Casanare'),
+('86', 1, 'Putumayo'),
+('88', 1, 'Archipiélago de San Andrés, Pr'),
+('91', 1, 'Amazonas'),
+('94', 1, 'Guainía'),
+('95', 1, 'Guaviare'),
+('97', 1, 'Vaupés'),
+('99', 1, 'Vichada'),
+('00', 5, 'LA FLORIDA'),
+('1', 3, 'Zulia'),
+('02', 5, 'MISSOURI'),
+('03', 5, 'CALIFORNIA'),
+('04', 5, 'NEW YORK'),
+('100', 5, 'LUISIANA'),
+('101', 5, 'OHIO'),
+('102', 5, 'MINNESOTA'),
+('103', 5, 'WASHINGTON'),
+('104', 5, 'SANT LOUIS'),
+('160', 4, 'COLÓN'),
+('106', 5, 'TEXAS'),
+('105', 5, 'PENSILVANIA'),
+('107', 5, 'DISTRITO DE COLUMBIA'),
+('06', 6, 'Nuevo León'),
+('108', 8, 'Bimini');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `departamentos`
+--
+ALTER TABLE `departamentos`
+  ADD PRIMARY KEY (`Codigo_Departamento`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
