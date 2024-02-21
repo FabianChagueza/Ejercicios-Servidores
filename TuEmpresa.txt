@@ -1,0 +1,18 @@
+--Ejercicio (Clase 20/02/2024)
+
+La compañía TuEmpresa S.A.S. registra las ventas de sus productos a los clientes, mediante la
+expedición de una factura de venta. Ver imagen 1.
+
+1.0 - Elabore el Modelo Relacional propuesto por usted, para almacenar de manera eficiente la
+información del proceso de ventas de TuEmpresa S.A.S.
+2.0 – Una vez le sea aprobado el diseño, debe crear en l servidor la base de datos, ingrese un
+numero prudente de registros en las tablas.
+3.0 – Importe las tablas: Paises, Ciudades, Departamentos. Asegúrese de que estas tablas queden
+correctamente relacionadas con el modelo existente.
+4.0 – Elabore la sentencia SQL, que muestre las siguientes consultas:
+4.1 Todas las facturas de un cliente en particular
+4.2 Todos los productos comprados por un cliente en particular
+4.3 Todos los Departamentos que no tienen ninguna ciudad asociada
+4.4 Todas las ciudades que no tienen un departamento asociado
+4.5 Todos los países que no tienen un departamento asociado
+5.0 – Realice una copia de la base de datos.
